@@ -1,1 +1,1 @@
-# bootcamp-blogger
+# bootcamp blogger acts as a CMS style blog site
