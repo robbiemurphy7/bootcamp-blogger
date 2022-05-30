@@ -2,7 +2,9 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config();
 
-const sequelize = new Sequelize('bootcamp_blogger_db', 'username', 'password', {
+const sequelize = process.env.JAWSDB_URL
+? new Sequelize(process.env.JAWSDB_URL)
+: new Sequalize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
   host: 'localhost',
   dialect: 'mysql',
   port: 3306
