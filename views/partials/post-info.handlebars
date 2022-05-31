@@ -1,18 +1,18 @@
-<div class="list-group-item" aria-current="true">
-    <div class="d-flex justify-content-between">
+<div aria-current="true">
+    <div>
 
     <div>
         <small>By {{user.username}} on {{format_date created_at}}:</small>
-        <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">{{title}}</h5>
+        <div>
+            <h5>{{title}}</h5>
         </div>
         {{#if comments.length}}
         <small>{{comments.length}} comment(s)</small>
         {{/if}}
     </div>
-    <div class="align-self-center">
-        <a class="btn btn-sm btn-primary" href="/post/{{id}}">View</a>
-        <a class="btn btn-sm btn-outline-primary" href="/dashboard/edit/{{id}}">Edit Post</a>
+    <div>
+        <a href="/post/{{id}}">View</a>
+        <a href="/dashboard/edit/{{id}}">Edit Post</a>
     </div>
     </div>
 

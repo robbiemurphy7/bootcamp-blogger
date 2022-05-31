@@ -1,35 +1,35 @@
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item" aria-current="page">Dashboard</li>
-        <li class="breadcrumb-item active" aria-current="page">Edit Post</li>
+<nav>
+    <ol>
+        <li><a href="/">Home</a></li>
+        <li>Dashboard</li>
+        <li>Edit Post</li>
     </ol>
 </nav>
 
-<div class="row">
-    <h3 class="mb-4">Editing "{{post.title}}"</h3>
+<div>
+    <h3>Edit "{{post.title}}"</h3>
 </div>
 
-<div class="row mb-4">
-    <form class="edit-post-form">
-        <div class="row mb-3">
-            <div class="col-sm-10">
-                <label class="form-label" for="post-title">Post Title</label>
-                <input type="text" name="post-title" class="form-control" id="post-title" value="{{post.title}}">
+<div>
+    <form>
+        <div>
+            <div>
+                <label>Post Title</label>
+                <input type="text" name="post-title" id="post-title" value="{{post.title}}">
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-sm-10">
-                <label class="form-label" for="post-content">Content</label>
-                <textarea type="text" name="post-content" class="form-control post-content"
+        <div>
+            <div>
+                <labelfor="post-content">Content</labelfor=>
+                <textarea type="text" name="post-content"
                     id="post-content">{{post.content}}</textarea>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-10">
-                <div class="d-flex justify-content-between">
-                    <button type="submit" class="delete-post-btn btn btn-outline-danger">Delete post</button>
-                    <button type="submit" class="btn btn-primary">Save</button>
+        <div>
+            <div>
+                <div>
+                    <button type="submit">Delete post</button>
+                    <button type="submit">Save</button>
                 </div>
             </div>
         </div>
