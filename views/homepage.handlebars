@@ -1,0 +1,18 @@
+{{#if posts.length}}
+<div class="list-group">
+  {{#each posts as |post|}}
+  <a href="/post/{{post.id}}" class="list-group-item list-group-item-action" aria-current="true">
+    <small>By {{post.user.username}} on {{format_date post.created_at}}:</small>
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{post.title}}</h5>
+    </div>
+    {{#if post.comments.length}}
+    <small>{{post.comments.length}} comment(s)</small>
+    {{/if}}
+  </a>
+  {{/each}}
+</div>
+{{else}}
+<h1>There are no posts in the blog!</h1>
+<h3>Login or sign up and then make a post!</h3>
+{{/if}}
